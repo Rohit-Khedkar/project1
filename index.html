@@ -1,2 +1,127 @@
-hello
-S
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http‑equiv="X‑UA‑Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohit Khedkar | Portfolio</title>
+
+    <!-- Google Font & Icons -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-lu/…" crossorigin />
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!----------------- NAV ----------------->
+    <header class="header">
+      <div class="container">
+        <h1 class="logo"><a href="#hero">Rohit K.</a></h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="assets/Resume_RohitKhedkar.pdf" class="btn" download>Resume</a></li>
+          </ul>
+          <button id="navToggle" aria‑label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        </nav>
+      </div>
+    </header>
+
+    <!----------------- HERO ----------------->
+    <section id="hero" class="hero">
+      <div class="container">
+        <h2>Hello, I’m <span>Rohit</span> 👋</h2>
+        <p>Data Analyst • Python & Power BI Enthusiast</p>
+        <div class="social">
+          <a href="https://github.com/rohit‑khedkar" target="_blank" aria‑label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/rohit‑khedkar" target="_blank" aria‑label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:rohit@example.com" aria‑label="Email"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!----------------- ABOUT ----------------->
+    <section id="about" class="about section">
+      <div class="container grid‑2">
+        <img src="assets/profile.jpg" alt="Rohit’s photo" class="about__img" />
+        <div>
+          <h3>About Me</h3>
+          <p>I’m a detail‑oriented data analyst experienced in Python, Pandas and Power BI. I enjoy transforming messy datasets into clear, actionable insights that drive business decisions.</p>
+          <p>When I’m not crunching numbers, you’ll find me exploring new tech podcasts or perfecting my pour‑over coffee ☕.</p>
+        </div>
+      </div>
+    </section>
+
+    <!----------------- SKILLS ----------------->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <h3>Skills</h3>
+        <div class="skill">
+          <span>Python</span>
+          <div class="bar"><div style="width: 90%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Power BI</span>
+          <div class="bar"><div style="width: 85%"></div></div>
+        </div>
+        <div class="skill">
+          <span>SQL</span>
+          <div class="bar"><div style="width: 75%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Excel</span>
+          <div class="bar"><div style="width: 80%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------- PROJECTS ----------------->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <h3>Projects</h3>
+        <div class="cards">
+          <article class="card">
+            <h4>Patients History Dashboard</h4>
+            <p>Power BI dashboard visualizing patient visits and clinical KPIs.</p>
+            <a href="#" class="link">View demo →</a>
+          </article>
+          <article class="card">
+            <h4>Data Wrangling Toolkit</h4>
+            <p>Python scripts that clean and analyze open‑source datasets using Pandas.</p>
+            <a href="#" class="link">GitHub repo →</a>
+          </article>
+          <!-- Add more project cards as desired -->
+        </div>
+      </div>
+    </section>
+
+    <!----------------- CONTACT ----------------->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h3>Contact Me</h3>
+        <form id="contactForm" novalidate>
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea name="message" rows="5" placeholder="Message" required></textarea>
+          <button class="btn" type="submit">Send</button>
+          <p id="formMsg" class="form‑msg" hidden>Thank you! I’ll reply soon.</p>
+        </form>
+      </div>
+    </section>
+
+    <!----------------- FOOTER ----------------->
+    <footer class="footer">
+      <div class="container">
+        <small>© 2025 Rohit Khedkar · Designed with 💜 + ☕</small>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
